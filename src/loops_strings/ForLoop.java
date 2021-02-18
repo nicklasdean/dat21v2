@@ -4,12 +4,9 @@ import java.util.Random;
 
 public class ForLoop {
     public static void main(String[] args) {
-
         countToTen();
         countDownFrom10();
         generateRandomNumbers();
-
-
         //Print each letter of a String on a separate line
     }
 
