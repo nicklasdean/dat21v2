@@ -2,10 +2,10 @@ package object_oriented_programming;
 
 public class Cat {
     //Attributes of a cat
-    String name;
-    int mood;
-    int hungry;
-    int energy;
+    public String name;
+    public int mood;
+    public int hungry;
+    public int energy;
 
     //Constructor
     public Cat(String nameOfCat, int moodOfCat, int hungerOfCat, int energyOfCat){
