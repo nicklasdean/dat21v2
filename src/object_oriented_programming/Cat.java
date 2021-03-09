@@ -42,4 +42,9 @@ public class Cat{
     public String getName(){
         return this.name;
     }
+
+    @Override
+    public String toString(){
+        return  "Name of cat: [" + this.name +"]" + " Energy of cat [" + this.energy + "]";
+    }
 }
