@@ -27,4 +27,16 @@ public class Person {
             this.name = name;
         }
     }
+
+    @Override
+    public boolean equals(Object personParameter){
+        //Casting
+        Person personAsPersonObject = (Person) personParameter;
+        if(this.cpr == personAsPersonObject.getCpr()){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 }

@@ -47,4 +47,15 @@ public class Cat{
     public String toString(){
         return  "Name of cat: [" + this.name +"]" + " Energy of cat [" + this.energy + "]";
     }
+
+    @Override
+    public boolean equals(Object otherCat){
+        Cat c = (Cat)otherCat;
+        if(this.name.equals(c.getName())){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 }
