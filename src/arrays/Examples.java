@@ -10,6 +10,7 @@ public class Examples {
         return numbers[0] + numbers[1] + numbers[2];
     }
 
+    //Method to sum all numbers with a loop
     public static int sumNumbersFromArray(int[] numbers){
         int sum = 0;
         for(int i = 0 ; i<numbers.length ; i++){
@@ -18,6 +19,7 @@ public class Examples {
         return sum;
     }
 
+    //Method for computing how many numbers above 5
     public static int howManyAbove5(int[] nums){
         int counter = 0;
         for (int i = 0; i < nums.length; i++) {
