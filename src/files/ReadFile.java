@@ -20,12 +20,13 @@ public class ReadFile {
         fileScanner.nextLine();
 
         //While scanner has input (That implements iterator)
-        while(fileScanner.hasNext()){
+        while(fileScanner.hasNextLine()){
             //1. Print each line of the file
             String currentLine = fileScanner.nextLine();
             //System.out.println(currentLine);
             //2. Make object of each entity
             String[] lineAsArray = currentLine.split(";");
+//          lineAsArray = [ [0]5, [1]Belgien, [2]11626404 ]
             int id = Integer.parseInt(lineAsArray[0].trim());
             String countryName = lineAsArray[1].trim();
             int population = Integer.parseInt(lineAsArray[2].trim());

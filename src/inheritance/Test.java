@@ -4,18 +4,16 @@ import java.util.ArrayList;
 
 public class Test {
     public static void main(String[] args) {
+
         Square s = new Square("red",0,2,2);
-        Square s1 = new Square("red",0,4,2);
-        Square s2 = new Square("red",0,3,1);
+        Circle c = new Circle("red",5);
 
         ArrayList<GeometricFigure> squareList = new ArrayList<GeometricFigure>();
         squareList.add(s);
-        squareList.add(s1);
-        squareList.add(s2);
+        squareList.add(c);
 
-        for(GeometricFigure square : squareList){
-            System.out.println(square.calculateArea());
+        for(GeometricFigure figure : squareList){
+            figure.calculateArea();
         }
-
     }
 }
