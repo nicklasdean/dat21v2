@@ -1,7 +1,5 @@
 package exceptions;
 
-import java.util.InputMismatchException;
-
 public class CprValidator {
     public boolean validateCpr(String cpr){
         if(cpr.length() != 10){
