@@ -9,9 +9,11 @@ class AgeValidatorTest {
     @Test
     void isLegalAge() {
         //Arrange
+        //Instantiating an AgeValidator
         AgeValidator validator = new AgeValidator();
 
         //Act
+        //Running the methods - collecting actual results as variables
         String legalAge = validator.isLegalAge(18);
 
         String illegalAge = validator.isLegalAge(17);
@@ -20,6 +22,7 @@ class AgeValidatorTest {
         String illegalInput = validator.isLegalAge(-5);
 
         //Assert
+        //Asserting expected against actual results
 
         //Legal age
         assertEquals("Legal age",legalAge);
