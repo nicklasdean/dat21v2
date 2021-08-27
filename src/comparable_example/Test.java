@@ -12,6 +12,7 @@ public class Test {
         RedditPost post4 = new RedditPost("Ikke så kreativ", "www.dyvad.com,",1);
 
         ArrayList<RedditPost> frontPage = new ArrayList<RedditPost>(Arrays.asList(post1,post2,post3,post4));
+
         System.out.println(frontPage);
 
         Collections.sort(frontPage);
